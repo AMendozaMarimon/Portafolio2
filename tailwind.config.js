@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         gray_body: "#F3F3F3",
+        yelow_body: "#FBD116",
       },
     },
     fontFamily: {
