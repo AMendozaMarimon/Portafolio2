@@ -7,10 +7,10 @@ import PDF from "../../assets/Aimar_FD_CV.pdf";
 
 export const Home = () => {
   return (
-    <div className="flex relative justify-center w-full h-[45.6rem] bg-gray_body overflow-hidden">
+    <div className="flex relative justify-center w-full h-auto px-24 xs:px-10 bg-gray_body overflow-hidden">
       {/* IMAGEN PERSONAL - AIMAR */}
       <img
-        className="absolute bottom-0 w-auto h-[33rem]"
+        className="absolute bottom-0 w-auto h-[34rem]"
         src={AIMAR}
         alt={AIMAR}
         draggable="false"
@@ -22,14 +22,14 @@ export const Home = () => {
       />
       {/* ARROWS DISEÑO */}
       <img
-        className="absolute left-0 bottom-20 w-auto h-[8rem]"
+        className="absolute left-0 bottom-20 xs:bottom-[7rem] w-auto 2xl:h-[8rem] xl:h-[8rem] lg:h-[8rem] md:h-[6rem] sm:h-[5rem] xs:h-[5rem]"
         src={ArrowR}
         alt={ArrowR}
         draggable="false"
         loading="lazy"
       />
       <img
-        className="absolute right-0 top-24 w-auto h-[8.5rem] transform rotate-180"
+        className="absolute right-0 xs:right-[-6rem] top-24 w-auto h-[8.5rem] 2xl:h-[8rem] xl:h-[8rem] lg:h-[8rem] md:h-[6rem] sm:h-[5rem] xs:h-[5rem] transform rotate-180"
         src={ArrowL}
         alt={ArrowL}
         draggable="false"
@@ -52,15 +52,15 @@ export const Home = () => {
         </button>
       </div>
       {/* TEXTO PRINCIPAL */}
-      <div className="mt-40">
-        <p className="font-glacial-indifference text-xl mb-2 text-center">
+      <div className="mt-40 pb-[15.8rem] xs:mt-[9rem]">
+        <p className="font-glacial-indifference text-xl xs:text-[1.1rem] sm:text-[1.1rem] mb-10 xs:mb-7 text-center text-balance">
           Hi👋, my name is <strong>Aimar</strong> and I am a
         </p>
-        <h1 className="font-league-spartan text-[110px] font-bold text-center">
+        <h1 className="font-league-spartan text-[6.5rem] leading-[6rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] mb-2 font-bold text-center text-balance">
           Front-End Developer
         </h1>
         <h1
-          className="text-[110px] font-bold leading-[2rem] text-center"
+          className="text-[6.5rem] font-bold leading-[6rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] text-center text-balance"
           style={{
             fontFamily: "League Spartan, sans-serif",
             WebkitTextStrokeWidth: "2px",
@@ -71,9 +71,9 @@ export const Home = () => {
           & Graphic Design
         </h1>
         {/* COLOMBIA + BANDERA */}
-        <p className="flex items-center font-glacial-indifference text-2xl text-left mt-14">
+        <p className="flex items-center font-glacial-indifference text-2xl text-left mt-12">
           <>
-            <strong>Colombia</strong>
+            <strong className="xs:hidden sm:hidden">Colombia</strong>
             <IconColombia />
           </>
         </p>
