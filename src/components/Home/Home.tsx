@@ -7,7 +7,7 @@ import PDF from "../../assets/Aimar_FD_CV.pdf";
 
 export const Home = () => {
   return (
-    <div className="flex relative justify-center w-full h-auto px-24 xs:px-10 bg-gray_body overflow-hidden">
+    <div className="flex relative justify-center w-full h-auto px-24 xs:px-10 bg-gray_body overflow-hidden" id="Home">
       {/* IMAGEN PERSONAL - AIMAR */}
       <img
         className="absolute bottom-0 w-auto h-[34rem]"
@@ -29,7 +29,7 @@ export const Home = () => {
         loading="lazy"
       />
       <img
-        className="absolute right-0 xs:right-[-6rem] top-24 w-auto h-[8.5rem] 2xl:h-[8rem] xl:h-[8rem] lg:h-[8rem] md:h-[6rem] sm:h-[5rem] xs:h-[5rem] transform rotate-180"
+        className="absolute right-0 xs:right-[-6rem] top-24 w-auto h-[8.5rem] 2xl:h-[8rem] 2xl:right-[1rem] 2xl:top-28 xl:h-[7rem] lg:h-[7rem] md:h-[6rem] sm:h-[5rem] xs:h-[5rem] transform rotate-180"
         src={ArrowL}
         alt={ArrowL}
         draggable="false"
@@ -56,11 +56,11 @@ export const Home = () => {
         <p className="font-glacial-indifference text-xl xs:text-[1.1rem] sm:text-[1.1rem] mb-10 xs:mb-7 text-center text-balance">
           Hi👋, my name is <strong>Aimar</strong> and I am a
         </p>
-        <h1 className="font-league-spartan text-[6.5rem] leading-[6rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] mb-2 font-bold text-center text-balance">
+        <h1 className="font-league-spartan text-[6.5rem] leading-[5rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] mb-2 font-bold text-center text-balance">
           Front-End Developer
         </h1>
         <h1
-          className="text-[6.5rem] font-bold leading-[6rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] text-center text-balance"
+          className="text-[6.5rem] font-bold leading-[5rem] xs:text-[4.3rem] sm:text-[4.3rem] xs:leading-[3.7rem] sm:leading-[3.7rem] text-center text-balance"
           style={{
             fontFamily: "League Spartan, sans-serif",
             WebkitTextStrokeWidth: "2px",
