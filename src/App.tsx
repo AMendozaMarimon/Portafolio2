@@ -1,16 +1,18 @@
-import { About } from "./components/AboutMe/About"
-import { Home } from "./components/Home/Home"
-import { Navbar } from "./components/Navbar/Navbar"
+import { About } from "./components/AboutMe/About";
+import { Home } from "./components/Home/Home";
+import { Navbar } from "./components/Navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-
   return (
     <div>
-      <Navbar />
-      <Home />
-      <About />
+      <BrowserRouter>
+        <Navbar />
+        <Home />
+        <About />
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

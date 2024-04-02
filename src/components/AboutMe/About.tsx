@@ -3,6 +3,7 @@ import GITHUB from "../../assets/github.webp";
 import GMAIL from "../../assets/email.webp";
 import BIRRETE from "../../assets/BIRRETE.svg";
 import DEGRADADO from "../../assets/DEGRADADO.webp";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
@@ -82,24 +83,34 @@ export const About = () => {
           earum voluptatibus modi dignissimos.
         </p>
         <div className="flex items-center gap-7">
-          <div className="p-4 bg-yelow_body rounded-full cursor-pointer transform transition duration-300 hover:scale-110">
-            <img
-              className="w-7 h-auto"
-              src={LINKEDIN}
-              alt={LINKEDIN}
-              draggable="false"
-              loading="lazy"
-            />
-          </div>
-          <div className="p-4 bg-yelow_body rounded-full cursor-pointer transform transition duration-300 hover:scale-110">
-            <img
-              className="w-7 h-auto"
-              src={GITHUB}
-              alt={GITHUB}
-              draggable="false"
-              loading="lazy"
-            />
-          </div>
+          <Link
+            to={"https://www.linkedin.com/in/aimar-mendoza/"}
+            target="_blank"
+          >
+            <div className="p-4 bg-yelow_body rounded-full cursor-pointer transform transition duration-300 hover:scale-110">
+              <img
+                className="w-7 h-auto"
+                src={LINKEDIN}
+                alt={LINKEDIN}
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </Link>
+          <Link 
+            to={"https://github.com/AMendozaMarimon"} 
+            target="_blank"
+          >
+            <div className="p-4 bg-yelow_body rounded-full cursor-pointer transform transition duration-300 hover:scale-110">
+              <img
+                className="w-7 h-auto"
+                src={GITHUB}
+                alt={GITHUB}
+                draggable="false"
+                loading="lazy"
+              />
+            </div>
+          </Link>
           <div className="p-4 bg-yelow_body rounded-full cursor-pointer transform transition duration-300 hover:scale-110">
             <img
               className="w-7 h-auto"
